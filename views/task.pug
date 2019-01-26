@@ -1,0 +1,21 @@
+extends layout
+
+block content
+    p Task input.....
+    input#taskInput
+    button(id='btn') Task Add
+
+    br
+    br
+    br
+    hr
+    br
+    br
+    br
+
+    each task in tasks
+        p= task.content
+
+
+
+    script(src='/javascripts/task.js')
